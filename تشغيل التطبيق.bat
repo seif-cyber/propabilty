@@ -1,0 +1,5 @@
+@echo off
+rem Serves the study app on http://localhost:8765 so the browser can install it as an app.
+cd /d "%~dp0"
+start "" http://localhost:8765/
+python -m http.server 8765

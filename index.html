@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مذاكرة الاحتمالات BSM214</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#3b5bdb">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Probability">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="topbar">
+  <button id="menuBtn" class="icon-btn" aria-label="إظهار/إخفاء القائمة" title="إظهار/إخفاء القائمة ( \ )">☰</button>
+  <a href="#home" class="brand">📘 Probability <span>BSM214</span></a>
+  <div class="top-actions">
+    <button id="installBtn" class="icon-btn text">⬇ تثبيت التطبيق</button>
+    <button id="themeBtn" class="icon-btn" aria-label="الوضع الليلي">🌓</button>
+  </div>
+</header>
+
+<div class="layout">
+  <nav id="sidebar" class="sidebar">
+    <div class="nav-group">
+      <a href="#home">🏠 ابدأ من هنا</a>
+      <a href="#focus">🧠 دماغ الدكتور</a>
+      <a href="#plan">⏰ خطة مذاكرة الليلة</a>
+    </div>
+    <div class="nav-title">📚 شرح المحاضرات</div>
+    <div class="nav-group" id="navLectures"></div>
+    <div class="nav-title">📝 امتحانات الميد القديمة</div>
+    <div class="nav-group" id="navExams"></div>
+    <div class="nav-title">🎯 بنك الأسئلة</div>
+    <div class="nav-group"><a href="#bank-general">🌐 أسئلة عامة (50 سؤال)</a></div>
+    <div class="nav-group" id="navBank"></div>
+    <div class="nav-title">🧾 مراجعة</div>
+    <div class="nav-group">
+      <a href="#all"><b>📚 كل أسئلة محاضرات 1→6 محلولة</b></a>
+      <a href="#allmid"><b>🏛️ كل أسئلة الميد في مكان واحد</b></a>
+      <a href="#mistakes">❌ غلطاتي <span class="pill bad" id="mistakesCount" style="display:none"></span></a>
+      <a href="#mock">🎲 امتحان تجريبي (عشوائي)</a>
+      <a href="#formulas">📐 ورقة القوانين</a>
+      <a href="#ztable">📊 جدول Z و t</a>
+      <a href="#calc">🧮 الآلة الحاسبة fx-991</a>
+    </div>
+  </nav>
+  <div id="backdrop" class="backdrop"></div>
+  <main id="app" class="content"></main>
+</div>
+
+<script src="data/lectures1.js"></script>
+<script src="data/lectures2.js"></script>
+<script src="data/lectures3.js"></script>
+<script src="data/exams.js"></script>
+<script src="data/bank.js"></script>
+<script src="data/extras.js"></script>
+<script src="data/calc.js"></script>
+<script src="data/bank2.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
